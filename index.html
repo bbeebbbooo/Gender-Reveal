@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f4efe9" />
+  <title>You're Invited | Baby Gender Reveal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-page">
+  <audio
+    id="backgroundMusic"
+    src="assets/audio/baby-music.mp3"
+    preload="auto"
+    autoplay
+    loop
+    playsinline
+  ></audio>
+
+  <button
+    id="musicToggle"
+    class="music-toggle"
+    type="button"
+    aria-label="Pause background music"
+    aria-pressed="true"
+  >
+    <span class="music-note" aria-hidden="true">♪</span>
+  </button>
+
+  <main class="page-shell">
+    <section class="invitation-panel" aria-labelledby="invitationTitle">
+      <button
+        id="openInvitation"
+        class="invitation-image-button"
+        type="button"
+        aria-label="Open the gender reveal invitation"
+      >
+        <span class="image-frame">
+          <img
+            src="assets/images/bear-invitation.webp"
+            alt="A baby bear holding pastel balloons on a soft neutral invitation card"
+          />
+          <span class="image-copy">
+            <span id="invitationTitle" class="image-title animated-title" aria-label="You're Invited">You're Invited</span>
+            <span id="invitationTagline" class="image-tagline sequence-item">Pick a side and take a guess—will it be a little mister or little miss?</span>
+            <span id="invitationDate" class="image-date sequence-item">July 19th, 2026</span>
+          </span>
+        </span>
+      </button>
+
+      <button id="tapToOpen" class="tap-to-open sequence-item" type="button">
+        <span>TAP TO OPEN</span>
+        <span class="arrow" aria-hidden="true">⌄</span>
+      </button>
+
+      <p id="autoplayMessage" class="autoplay-message">
+        Music starts automatically where supported
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

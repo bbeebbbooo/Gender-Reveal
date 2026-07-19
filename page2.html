@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f4efe9" />
+  <title>Mahmoud &amp; Yasmeen | Gender Reveal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="details-page">
+  <audio
+    id="backgroundMusic"
+    src="assets/audio/baby-music.mp3"
+    preload="auto"
+    autoplay
+    loop
+    playsinline
+  ></audio>
+
+  <button
+    id="musicToggle"
+    class="music-toggle"
+    type="button"
+    aria-label="Pause background music"
+    aria-pressed="true"
+  >
+    <span class="music-note" aria-hidden="true">♪</span>
+  </button>
+
+  <main class="details-experience">
+    <section class="details-invitation" aria-labelledby="detailsTitle">
+      <span class="decorative-orb decorative-orb-pink" aria-hidden="true"></span>
+      <span class="decorative-orb decorative-orb-blue" aria-hidden="true"></span>
+
+      <header class="details-hero">
+        <p class="details-eyebrow details-reveal-item" data-details-reveal>
+          Pink or blue?
+        </p>
+
+        <h1 id="detailsTitle" class="parents-names details-reveal-item" data-details-reveal>
+          <span>Mahmoud</span>
+          <span class="name-ampersand">&amp;</span>
+          <span>Yasmeen</span>
+        </h1>
+
+        <p class="details-introduction details-reveal-item" data-details-reveal>
+          invite you to share a beautiful evening of love, laughter, and one very special surprise
+        </p>
+
+        <h2 class="reveal-question details-reveal-item" data-details-reveal>
+          Little Mister or Little Miss?
+        </h2>
+      </header>
+
+      <div class="details-divider details-reveal-item" data-details-reveal aria-hidden="true">
+        <span></span>
+        <span class="divider-star">★</span>
+        <span></span>
+      </div>
+
+      <section class="event-details-grid" aria-label="Event details">
+        <article class="event-detail-card date-card details-reveal-item" data-details-reveal>
+          <span class="detail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M7 3v3M17 3v3M4.5 9h15M5 5.5h14a1 1 0 0 1 1 1V20H4V6.5a1 1 0 0 1 1-1Z"/>
+              <path d="M8 13h3M13 13h3M8 16.5h3M13 16.5h3"/>
+            </svg>
+          </span>
+          <p class="detail-label">Date</p>
+          <h3>Sunday</h3>
+          <p>July 19th, 2026</p>
+        </article>
+
+        <article class="event-detail-card time-card details-reveal-item" data-details-reveal>
+          <span class="detail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <circle cx="12" cy="12" r="8.5"/>
+              <path d="M12 7.5V12l3.3 2"/>
+            </svg>
+          </span>
+          <p class="detail-label">Time</p>
+          <h3>7:00 P.M.</h3>
+          <p>Please arrive a little early</p>
+        </article>
+
+        <article class="event-detail-card venue-card details-reveal-item" data-details-reveal>
+          <span class="detail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z"/>
+              <circle cx="12" cy="10" r="2.2"/>
+            </svg>
+          </span>
+          <p class="detail-label">Place</p>
+          <h3>Wadi Degla Club</h3>
+          <p>Join us for the big reveal</p>
+        </article>
+      </section>
+
+      <a
+        class="map-button details-reveal-item"
+        data-details-reveal
+        href="https://maps.app.goo.gl/UVAMQgmnEoULyL6i6"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open Wadi Degla Club location in Google Maps"
+      >
+        <span class="map-button-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M9 18.5 4.5 21V6L9 3.5l6 2L19.5 3v15L15 20.5l-6-2Z"/>
+            <path d="M9 3.5v15M15 5.5v15"/>
+          </svg>
+        </span>
+        <span>Open Location</span>
+        <span class="map-button-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <div class="team-note details-reveal-item" data-details-reveal>
+        <span class="team-dot team-dot-pink" aria-hidden="true"></span>
+        <p>
+          Pick your side and wear a touch of
+          <strong>pink</strong> or <strong>blue</strong>.
+        </p>
+        <span class="team-dot team-dot-blue" aria-hidden="true"></span>
+      </div>
+
+      <a class="details-back-link details-reveal-item" data-details-reveal href="index.html">
+        Back to the envelope
+      </a>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
